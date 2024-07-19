@@ -1,4 +1,4 @@
 .ipython/
-.jupyter/
-.local/
+.jupyter/lab/workspaces
+.local/share/jupyter/runtime
 .npm/
