@@ -1,12 +1,9 @@
 services:
   weather-etl-pipeline-service:
     container_name: "weather-etl-pipeline"
-    image: "dev-envirnonment"
+    image: "jupyter/pyspark-notebook"
     platform: linux/amd64
     volumes:
-      - "./scripts/sparkdata:/sparkdata"
-      - "./scripts/work:/home/jovyan/work"
-      - "D:/weather_elt_pipeline:/home/jovyan"
+      - "C:/Users/Jorge/Documents/weather_elt_pipeline:/home/jovyan"
     ports:
       - "8888:8888"
-    user: "root"
